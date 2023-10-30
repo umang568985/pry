@@ -1,0 +1,25 @@
+# gamecenter.kv
+
+BoxLayout:
+    orientation: 'vertical'
+    
+    Label:
+        text: 'Welcome to the Game Center!'
+        font_size: 24
+        size_hint: 1, 0.2
+    
+    Button:
+        text: 'Snake'
+        on_release: app.load_game('snake')
+    
+    Button:
+        text: 'Tic Tac Toe'
+        on_release: app.load_game('tic_tac_toe')
+    
+    Button:
+        text: 'Pong'
+        on_release: app.load_game('pong')
+    
+    Button:
+        text: 'Quit'
+        on_release: app.stop
